@@ -25,7 +25,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'npm config set sass_binary_site=https://npm.taobao.org/mirrors/node-sass'
+    customCommand: 'config set sass_binary_site=https://npm.taobao.org/mirrors/node-sass'
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
