@@ -19,7 +19,9 @@ steps:
 
 - bash: sudo npm install -g npm@6.14.15
 
-- bash: sudo npm install -g node-gyp
+- bash: sudo rm -rf package-lock.json
+- bash: sudo rm -rf node_modules
+- bash: rm -rf ~/.node-gyp
 
 - bash: npm -v
 
