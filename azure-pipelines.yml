@@ -18,9 +18,9 @@ steps:
     version: '$(dotnetSdkVersion)'
 
 - task: Npm@1
-  displayName: 'Run npm install -g npm@"6.14.15"'
   inputs:
-    verbose: false
+    command: 'custom'
+    customCommand: 'install -g npm@6.14.15'
 
 - task: Npm@1
   displayName: 'Run npm install'
