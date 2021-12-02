@@ -19,6 +19,10 @@ steps:
 
 - bash: sudo npm install -g npm@6.14.15
 
+- bash: sudo npm install -g node-gyp
+
+- bash: npm -v
+
 - bash: sudo npm install
 
 - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
