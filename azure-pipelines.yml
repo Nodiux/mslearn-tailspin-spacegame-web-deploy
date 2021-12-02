@@ -17,7 +17,7 @@ steps:
   inputs:
     version: '$(dotnetSdkVersion)'
 
-- bash: sudo npm update -g
+- bash: sudo npm install -g npm@6.14.15
 
 - bash: sudo npm install
 
