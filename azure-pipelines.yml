@@ -20,7 +20,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'sudo npm update -g'
+    customCommand: 'update -g'
 
 - task: Npm@1
   displayName: 'Run npm install'
